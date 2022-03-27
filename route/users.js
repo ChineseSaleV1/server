@@ -1,13 +1,8 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
+const userController = require("../controllers/user");
 
-// http://localhost:4500/users/1
-router.get('/users/:id', async function (req, res) {
-    res.send("Welcome")
-})
-
-router.post('/users', async function (req, res) {
-
-})
-
+router.get('/:id', userController.getOrdersByUserId);
+router.post('', userController.addUser);
+router.post('', userController.addOrder);
 module.exports = router;
