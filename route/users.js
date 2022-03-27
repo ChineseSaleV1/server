@@ -7,4 +7,3 @@ router.get('/:id', userController.getOrdersByUserId);
 router.post('', userController.addUser);
 router.post('', userController.addOrder);
 module.exports = router;
-console.log( User.addUser("moshe","green","0556772995",null));
