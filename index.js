@@ -6,7 +6,7 @@ const winning = require('./route/winning')
 const app = express()
 mongoose.connect("mongodb://localhost:27017/chinaSale")
     .then(() => { console.log("mongo db connected"); })
-    .catch(er => { console.log(er) });
+    .catch(er => { console.log(er+"error") });
 app.use(express.json())
 
 
